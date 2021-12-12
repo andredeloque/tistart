@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+header{
+    width: 100%;
+    height: 40px;
+    background-color: #212121;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    font-family: helvetica;
+    font-size: 23px;
+}
+
+.links{
+    display: flex;
+    list-style: none;
+}
+
+a{
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: helvetica;
+    font-size: 20px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 25px;
+}
+
+.pagina_atual{
+    background: #F9A825;
+    padding: 5px 20px 5px 20px;
+    border-radius: 25px;
+}
+
+.link_pagina:hover{
+    background-color: red;
+    
+}
+
+
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 118px;
+    margin-bottom: 117px;
+}
+
+.borda{
+    border: #00A8FF solid 1px;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 41px;
+    font-family: helvetica;
+}
+.email{
+    border: solid 1px black;
+}
+
+.rodape{
+    background: #212121;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    font-family: helvetica;
+}
+
+.lorem{
+    border-right: dotted 1px black;
+}
