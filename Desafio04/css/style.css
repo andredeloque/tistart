@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fonte-principal: Verdana, arial;
+}
+
+.flex {
+    display: flex;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+}
+
+header#topo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right, #3d5afe, #2196f3);    
+    font-family: var(--fonte-principal);
+    position: relative;
+}
+
+header#topo h1 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+header#topo h2 {
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+header#topo #divIcon {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -60px;    
+    font-size: 80px;
+}
+
+header#topo #divIcon .material-icons {
+    font-size: 64px;
+    color: #2196f3;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main #mainSection {
+    width: 350px;
+    height: auto;
+    margin: 80px 10px 0 10px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+main #mainSection #endereco {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-principal);
+}
+
+main #mainSection #endereco label {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.input {
+    height: 38px;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid black;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+#cep:focus {
+    border: 1px solid #3d5afe;
+}
+
+main #mainSection #endereco input#buscar {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 3px solid #3d5afe;
+    color: #fff;    
+    cursor: pointer;
+    transition: 0.1s;
+    background-color: #2196f3;
+}
+
+main #mainSection #endereco input#buscar:active {
+    margin-top: 12px;
+    border: none;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/script.js"></script>
+    <title>Me acha!</title>
+</head>
+
+<body>
+    <header id="topo">
+        <h1>ME ACHA!</h1>
+        <h2>ENCONTRE UM ENDEREÇO PELO NÚMERO DE CEP</h2>
+        <div id="divIcon">
+            <span class="material-icons">travel_explore</span>
+        </div>
+    </header>
+
+    <main>
+        <section id="mainSection">
+            <form id="endereco">
+                <label for="cep" class="flex">CEP</label>
+                <input type="text" name="cep" placeholder="Digite um CEP válido" id="cep" maxlength="9" class="input">
+
+                <label for="logradouro" class="flex">Logradouro</label>
+                <input type="text" name="logradouro" id="logradouro" class="input" disabled>
+
+                <label for="bairro" class="flex">Bairro</label>
+                <input type="text" name="bairro" id="bairro" class="input" disabled>
+
+                <label for="cidade" class="flex">Cidade</label>
+                <input type="text" name="cidade" id="localidade" class="input" disabled>
+
+                <label for="estado" class="flex">Estado</label>
+                <input type="text" name="estado" id="uf" class="input" disabled>
+
+                <input type="button" value="BUSCAR" id="buscar">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
